@@ -29,11 +29,15 @@
 
     <!-- <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div> -->
     <!-- <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.9}"> -->
+    <script>    jQuery(function () {
+            jQuery("#P1").YTPlayer();
+        });</script>
 
-    <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'#P1',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8}">
+    <div id="video-wrapper">
+        <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI', showYTLogo:false,showControls:true,containment:'#video-wrapper',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8,optimizeDisplay: true}">
+        </div>
     </div>
 
-    </div>
 
 
 
@@ -65,8 +69,6 @@
 
 </body>
 
-<script>    jQuery(function () {
-        jQuery("#P1").YTPlayer();
-    });</script>
+
 
 </html>
