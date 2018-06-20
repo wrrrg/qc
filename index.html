@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiet Company: A Band from Austin, Texas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quiet Company</h1>
+
+        <h2>A Band from Austin, Texas</h2>
+        <nav>
+            <a href="#about">About | </a>
+            <a href="#tour-dates">Tour Dates | </a>
+            <a href="#store">Store | </a>
+            <a href="#music">Music </a>
+        </nav>
+
+    </header>
+
+    <!-- <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div> -->
+    <!-- <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.9}"> -->
+
+    <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'#P1',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8}">
+    </div>
+
+    </div>
+
+
+
+    <div id="about">
+        <h2>About: </h2>
+        <p>Vice pork belly butcher selfies keffiyeh small batch sustainable Shoreditch hella VHS squid Thundercats iPhone occupy
+            organic Blue Bottle leggings Truffaut XOXO selvage try-hard keytar seitan jean shorts normcore scenester mumblecore
+            Helvetica gentrify 8-bit raw denim meh Echo Park stumptown direct trade beard freegan Tonx Etsy Intelligentsia
+            next level Pinterest master cleanse fixie Tumblr Marfa bicycle rights irony roof party mustache kitsch food truck
+            skateboard fingerstache flexitarian Pitchfork fashion axe High Life lomo pickled tousled polaroid Banksy McSweeney's
+            fanny pack semiotics ethical umami salvia pop-up artisan Cosby sweater church-key craft beer aesthetic messenger
+            bag literally readymade tofu biodiesel brunch sriracha forage Neutra pour-over put a bird on it Bushwick locavore
+            fap four loko Godard ugh wolf drinking vinegar kogi wayfarers American Apparel paleo cornhole photo booth Schlitz
+            gastropub PBR&B hashtag PBR slow-carb street art banjo sartorial single-origin coffee flannel authentic Wes Anderson
+            dreamcatcher Odd Future chambray lo-fi hoodie chia twee chillwave Carles retro banh mi tattooed heirloom tote
+            bag plaid disrupt mixtape narwhal DIY viral actually ennui +1 shabby chic bespoke synth deep v asymmetrical Williamsburg
+            cardigan pug mlkshk distillery you probably haven't heard of them YOLO farm-to-table 90's meggings Brooklyn quinoa
+            3 wolf moon blog whatever cliche cray bitters vegan vinyl Portland typewriter Kickstarter art party cred gluten-free
+            post-ironic Austin letterpress yr crucifix kale chips trust fund swag before they sold out</p>
+    </div>
+
+    <div id="tour-dates">
+        <h2>Tour Dates: </h2>
+        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+        <a class="bit-widget-initializer" data-artist-name="quiet company" data-display-local-dates="false" data-display-past-dates="true"
+            data-auto-style="false" data-text-color="#000000" data-link-color="#2F95DE" data-popup-background-color="#FFFFFF"
+            data-background-color="#FFFFFF" data-display-limit="15" data-link-text-color="#FFFFFF"></a>
+    </div>
+
+</body>
+
+<script>    jQuery(function () {
+        jQuery("#P1").YTPlayer();
+    });</script>
+
+</html>
