@@ -57,7 +57,7 @@ header {
 }
 
 .hem {
-  transition: 0.2s ease-in;
+  transition: 0.09s ease-in-out;
 }
 .header-dark {
   color: $off-black !important;
@@ -69,22 +69,26 @@ header {
     flex-direction: column;
 
     h1 {
-      font-size: 6rem;
+      font-size: 3rem;
       text-align: center;
       margin: 0 auto;
       margin-top: 1rem;
     }
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 0.1rem;
+      display: none;
     }
     nav {
       text-align: center;
       margin: 0 auto;
       margin-left: auto;
-      margin-top: 1rem;
+      margin-top: 0.1rem;
+      a {
+        font-size: 2.5rem;
+      }
     }
   }
   .flex-container .section h2:before {
-    padding: 4rem;
+    padding: 3rem;
   }
 }
