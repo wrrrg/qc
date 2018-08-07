@@ -9,26 +9,28 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
-    <script src="src/scripts/app.js"></script>
+
 </head>
 
 <body>
-    <header class="flex-head">
+
+    <header class="grid-head header">
+        <!-- script to load video bg -->
 
 
-        <a href=#top class="band-logo">
-            <h1 class="header-h1">Quiet Company</h1>
-            <h2 class="header-h2"> is a band from Austin, TX</h2>
+        <!-- body -->
+        <div class="grid-spacer"></div>
+        <a href=#top class="band-logo hem">
+            <h1 class="header-h1 hem">Quiet Company</h1>
+            <h2 class="header-h2 hem"> is a band from Austin, TX</h2>
         </a>
 
 
-        <nav class="nav-main">
-            <a href="#about-link">About | </a>
-            <a href="#tour-link">Shows | </a>
-            <a href="#store">Store | </a>
-            <a href="#music">Music </a>
+        <nav class="nav-main" class="hem">
+            <a href="#about-link" class="hem">About | </a>
+            <a href="#tour-link" class="hem">Shows | </a>
+            <a href="#store" class="hem">Store | </a>
+            <a href="#music" class="hem">Music </a>
         </nav>
 
     </header>
@@ -47,10 +49,12 @@
 
 
         <div id="about" class="section">
+            <a class="anchor" name="about-link">
+                <h2>About:
 
-            <h2>About:
-                <a class="anchor" name="about-link"></a>
-            </h2>
+                </h2>
+            </a>
+
             <p>Vice pork belly butcher selfies keffiyeh small batch sustainable Shoreditch hella VHS squid Thundercats iPhone
                 occupy organic Blue Bottle leggings Truffaut XOXO selvage try-hard keytar seitan jean shorts normcore scenester
                 mumblecore Helvetica gentrify 8-bit raw denim meh Echo Park stumptown direct trade beard freegan Tonx Etsy
@@ -69,10 +73,12 @@
         </div>
 
         <div id="tour-dates" class="section">
+            <a class="anchor" name="tour-link">
+                <h2>Tour Dates:
 
-            <h2>Tour Dates:
-                <a class="anchor" name="tour-link"></a>
-            </h2>
+                </h2>
+            </a>
+
             <div class="tour-wrapper">
                 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
                 <a class="bit-widget-initializer" data-artist-name="Quiet Company" data-display-local-dates="false" data-display-past-dates="true"
@@ -82,15 +88,26 @@
         </div>
 
         <div id="store" class="section">
-            <h2>Quiet Company Store:
-                <a class="anchor" name="store-link"></a>
-            </h2>
+            <a class="anchor" name="store-link">
+                <h2>Quiet Company Store:
+
+                </h2>
+            </a>
+
 
             <a class="store-button" href="https://gum.co/MmLyb" target="_blank" data-gumroad-single-product="true">It's Not Attractive and it Changes Nothing</a>
             <a class="store-button" href="https://gumroad.com/l/cniP" target="_blank" data-gumroad-single-product="true">Transgressor Vinyl</a>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
+    <script src="src/scripts/app.js"></script>
+
     <script src="https://gumroad.com/js/gumroad.js"></script>
+    <script>jQuery(function () {
+            jQuery("#P1").YTPlayer();
+        }); </script>
+
 </body>
 
 
