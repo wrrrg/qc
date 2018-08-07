@@ -18,9 +18,9 @@
     <header>
 
 
-        <a href=#top>
-            <h1>Quiet Company</h1>
-            <h2>is a band from Austin, TX</h2>
+        <a href=#top class="band-logo">
+            <h1 class="header-h1">Quiet Company</h1>
+            <h2 class="header-h2"> is a band from Austin, TX</h2>
         </a>
 
 
@@ -35,9 +35,7 @@
 
     <!-- <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div> -->
     <!-- <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.9}"> -->
-    <script>    jQuery(function () {
-            jQuery("#P1").YTPlayer();
-        });</script>
+    <!-- <script>    </script> -->
     <a name="top"></a>
     <div id="video-wrapper">
         <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI', showYTLogo:false,showControls:true,containment:'#video-wrapper',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8,optimizeDisplay: true}">
@@ -82,8 +80,17 @@
                     data-background-color="#000000" data-display-limit="30" data-link-text-color="#FFFFFF" data-display-logo="false"></a>
             </div>
         </div>
-    </div>
 
+        <div id="store" class="section">
+            <h2>Quiet Company Store:
+                <a class="anchor" name="store-link"></a>
+            </h2>
+
+            <a class="store-button" href="https://gum.co/MmLyb" target="_blank" data-gumroad-single-product="true">It's Not Attractive and it Changes Nothing</a>
+            <a class="store-button" href="https://gumroad.com/l/cniP" target="_blank" data-gumroad-single-product="true">Transgressor Vinyl</a>
+        </div>
+    </div>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
 </body>
 
 

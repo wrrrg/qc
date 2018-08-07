@@ -2,10 +2,32 @@
 
 @import "partials/reset";
 @import "partials/variables";
-@import "partials/header";
+
 @import "partials/anchor";
+@import "partials/header";
 @import "partials/homepage";
+@import "partials/storebutton";
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../src/fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../../src/fonts/BebasNeueRegular.woff") format("woff"),
+    url("../../src/fonts/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url("../../src/fonts/BebasNeueBold.woff2") format("woff2"),
+    url("../../src/fonts/BebasNeueBold.woff") format("woff"),
+    url("../../src/fonts/BebasNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 body {
   background: black;
+  font-family: "BebasNeue";
+  font-size: 3rem;
 }

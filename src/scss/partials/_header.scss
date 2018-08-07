@@ -6,12 +6,15 @@ header {
   margin-top: 0;
   display: inline-flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
   // background: rgba(0, 0, 0, 0.01);
   color: white;
   h1 {
-    font-size: 3.8rem;
+    font-size: 7rem;
     font-family: $logo-font;
-    margin: 2rem 0 0.5rem 10rem;
+    margin: 0 auto;
+    // margin: 2rem 0 0.5rem 10rem;
   }
   h2 {
     text-align: center;
@@ -22,13 +25,14 @@ header {
   a {
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
   }
 
   nav {
     vertical-align: middle;
     display: inline-block;
     margin: 2rem;
+    float: right;
   }
 
   nav a {
@@ -40,6 +44,10 @@ header {
   }
   nav a:hover {
     color: gray;
+  }
+  .band-logo {
+    margin: 0 auto;
+    margin-top: 0.7rem;
   }
 }
 
@@ -60,5 +68,8 @@ header {
       text-align: center;
       margin-top: 1rem;
     }
+  }
+  .flex-container .section h2:before {
+    padding: 4rem;
   }
 }
