@@ -6,10 +6,12 @@
 @import "partials/anchor";
 @import "partials/header";
 @import "partials/homepage";
+@import "partials/store";
 @import "partials/storebutton";
 
 body {
   background: $off-black;
+  margin: 0px;
   font-family: "BebasNeue";
   font-size: 3rem;
   box-sizing: border-box;
