@@ -1,0 +1,14 @@
+#store-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.store-img {
+  position: relative;
+  width: 390px;
+  height: auto;
+  max-width: 390px;
+  max-height: 390px;
+  object-fit: scale-down;
+}

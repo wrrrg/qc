@@ -8,51 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="dist/css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
-    <script src="src/scripts/app.js"></script>
+
 </head>
 
 <body>
-    <header>
+
+    <header class="grid-head header">
+        <!-- script to load video bg -->
 
 
-        <a href=#top>
-            <h1>Quiet Company</h1>
-            <h2>is a band from Austin, TX</h2>
+        <!-- body -->
+        <div class="grid-spacer"></div>
+        <a href=#top class="band-logo hem">
+            <h1 class="header-h1 hem">Quiet Company</h1>
+            <h2 class="header-h2 hem subtitle">
+                <ul class="social-icons">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+            </h2>
         </a>
 
 
-        <nav class="nav-main">
-            <a href="#about-link">About | </a>
-            <a href="#tour-link">Shows | </a>
-            <a href="#store">Store | </a>
-            <a href="#music">Music </a>
+        <nav class="nav-main" class="hem">
+            <!-- <a href="#about-link" class="hem">About | </a> -->
+            <a href="#tour-link" class="hem">Shows | </a>
+            <a href="#store" class="hem">Store | </a>
+            <a href="#music" class="hem">Music </a>
         </nav>
 
     </header>
 
-    <!-- <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div> -->
-    <!-- <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.9}"> -->
-    <script>    jQuery(function () {
-            jQuery("#P1").YTPlayer();
-        });</script>
-    <a name="top"></a>
-    <div id="video-wrapper">
-        <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI', showYTLogo:false,showControls:true,containment:'#video-wrapper',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8,optimizeDisplay: true}">
-        </div>
-    </div>
-
-
-
-
     <div class="flex-container">
-        <div id="about" class="section">
 
-            <h2>About:
-                <a class="anchor" name="about-link"></a>
-            </h2>
+
+        <!-- <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">My video</div> -->
+        <!-- <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.9}"> -->
+        <!-- <script>    </script> -->
+        <a name="top"></a>
+        <!-- <div id="video-wrapper">
+            <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/eRZsLqHxmqI', showYTLogo:false,showControls:true,containment:'#video-wrapper',startAt:0,mute:true,autoPlay:true,loop:false,opacity:.8,optimizeDisplay: true}">
+            </div>
+        </div> -->
+        <div id="landing" class="section">
+            <audio controls class="audio">
+                <!-- <source src="src/audio/rrh.mp3" type="audio/ogg"> -->
+                <source src="src/audio/rrh.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+
+
+        <!-- <div id="about" class="section">
+            <a class="anchor" name="about-link">
+                <h2>About:
+
+                </h2>
+            </a>
+
             <p>Vice pork belly butcher selfies keffiyeh small batch sustainable Shoreditch hella VHS squid Thundercats iPhone
                 occupy organic Blue Bottle leggings Truffaut XOXO selvage try-hard keytar seitan jean shorts normcore scenester
                 mumblecore Helvetica gentrify 8-bit raw denim meh Echo Park stumptown direct trade beard freegan Tonx Etsy
@@ -68,21 +88,49 @@
                 haven't heard of them YOLO farm-to-table 90's meggings Brooklyn quinoa 3 wolf moon blog whatever cliche cray
                 bitters vegan vinyl Portland typewriter Kickstarter art party cred gluten-free post-ironic Austin letterpress
                 yr crucifix kale chips trust fund swag before they sold out</p>
-        </div>
+        </div> -->
 
         <div id="tour-dates" class="section">
+            <a class="anchor" name="tour-link">
+                <h2>Tour Dates:
 
-            <h2>Tour Dates:
-                <a class="anchor" name="tour-link"></a>
-            </h2>
+                </h2>
+            </a>
+
             <div class="tour-wrapper">
                 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
                 <a class="bit-widget-initializer" data-artist-name="Quiet Company" data-display-local-dates="false" data-display-past-dates="true"
-                    data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#2F95DE" data-popup-background-color="#000000"
-                    data-background-color="#000000" data-display-limit="30" data-link-text-color="#FFFFFF" data-display-logo="false"></a>
+                    data-auto-style="true" data-text-color="#f1e6e6" data-link-color="#5e7aec" data-popup-background-color="#000000"
+                    data-background-color="#141414" data-display-limit="30" data-link-text-color="#FFFFFF" data-display-logo="false"></a>
             </div>
         </div>
+
+        <div id="store" class="section">
+            <a class="anchor" name="store-link">
+                <h2>Quiet Company Store:
+
+                </h2>
+            </a>
+
+            <div id="store-container">
+                <a class="store-button" href="https://gum.co/MmLyb" target="_blank" data-gumroad-single-product="true">
+                    <img class="store-img" src="/src/images/not-attractive.jpg" alt="It's Not Attractive and it Changes Nothing CD">                    </a>
+                <a class="store-button" href="https://gumroad.com/l/cniP" target="_blank" data-gumroad-single-product="true">
+                    <img class="store-img" src="/src/images/transgressor.jpg" alt="Transgressor Vinyl">
+                </a>
+
+            </div>
+
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
+    <script src="src/scripts/app.js"></script>
+
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <script>jQuery(function () {
+            jQuery("#P1").YTPlayer();
+        }); </script>
 
 </body>
 
