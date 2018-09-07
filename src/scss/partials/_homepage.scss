@@ -64,17 +64,17 @@ div #store {
 // }
 
 .tour-wrapper {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   .bit-venue,
   .bit-date,
   .bit-location,
   .bit-button {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
-  .bit-offers {
-    max-height: 80px;
-  }
+  // .bit-offers {
+  //   max-height: 80px;
+  // }
 }
 
 @media only screen and (max-width: 1024px) {
