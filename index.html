@@ -24,7 +24,7 @@
         <!-- body -->
         <div class="grid-spacer"></div>
         <a href=#top class="band-logo hem">
-            <h1 class="header-h1 hem">Quiet Company</h1>
+            <!-- <h1 class="header-h1 hem">Quiet Company</h1> -->
             <h2 class="header-h2 hem subtitle">
                 <ul class="social-icons">
                     <li><i class="fab fa-facebook-f"></i></li>
@@ -38,6 +38,7 @@
 
         <nav class="nav-main" class="hem">
             <!-- <a href="#about-link" class="hem">About | </a> -->
+            <a href="#top" class="hem"><span class='qc-nav-logo'>Quiet Company</span> |</a>
             <a href="#tour-link" class="hem">Shows | </a>
             <a href="#store" class="hem">Store | </a>
             <a href="#music" class="hem">Music </a>
@@ -57,9 +58,12 @@
             </div>
         </div> -->
         <div id="landing" class="section">
-            <audio controls class="audio">
+            <!-- <audio controls class="audio">
                 <!-- <source src="src/audio/rrh.mp3" type="audio/ogg"> -->
-                <source src="src/audio/rrh.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            <!-- <source src="src/audio/rrh.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>  -->
+            <audio preload="auto" controls>
+                <source src="src/audio/rrh.mp3">
             </audio>
         </div>
 
@@ -125,12 +129,18 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.2/jquery.mb.YTPlayer.js"></script>
+    <script src="src/scripts/vendors/audioplayer.js"></script>
     <script src="src/scripts/app.js"></script>
 
     <script src="https://gumroad.com/js/gumroad.js"></script>
     <script>jQuery(function () {
             jQuery("#P1").YTPlayer();
         }); </script>
+    <script>
+        $(function () {
+            $('audio').audioPlayer();
+        });
+    </script>
 
 </body>
 
